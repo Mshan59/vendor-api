@@ -8,7 +8,7 @@ app.use('/api',vendorRoutes);
 app.use((req,res)=> {
     res.status(404).jsom({error:"Endpoint Not found"});
 });
- const PORT = 3000
+ const PORT = 3036
  app.listen(PORT,()=>{
-    console.log('server is running onn port ${PORT}');
+    console.log('server is running on port ${PORT}');
  });
